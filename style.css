@@ -136,9 +136,9 @@ border-bottom-left-radius: 10px;
 }
 /* main style */
 .mainDivBox {
-  width: 330px;
+  width: 270px;
   height: 350px;
-  margin: 3vh 4vw;
+  margin: 3vh 0.5rem;
   border-radius: 0 10px 10px 10px;
   overflow: hidden;
 }
