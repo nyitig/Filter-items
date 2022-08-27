@@ -1,0 +1,220 @@
+/* Full Page Style */
+@font-face {
+  font-family: DancingScript;
+  src: url(assets/fonts/DancingScript-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DancingScript, sans-serif;
+  transition: all 0.4s linear;
+  scrollbar-width: none;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+:root {
+  --colorGreen: #0f971c;
+  --colorBlack: #0c0c0c;
+  --colorGrey: #9DA99A;
+  --colorBackground: #ebebeb;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background: hsla(0, 0%, 5%, 1);
+  background: linear-gradient(135deg, hsla(0, 0%, 5%, 1) 0%, hsla(126, 82%, 33%, 1) 100%);
+  background: -moz-linear-gradient(135deg, hsla(0, 0%, 5%, 1) 0%, hsla(126, 82%, 33%, 1) 100%);
+  background: -webkit-linear-gradient(135deg, hsla(0, 0%, 5%, 1) 0%, hsla(126, 82%, 33%, 1) 100%);
+}
+.displayNone {
+  display: none;
+}
+.displayFlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.displayFlexRow {
+  display: flex;
+  flex-direction: row;
+}
+.justyContCent {
+  justify-content: center;
+}
+.alignItemCent {
+  align-items: center;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.marginTopH {
+  margin-top: 5vh;
+}
+.marginTopP {
+  margin-top: 2vh;
+}
+
+.fontH1 {
+  font-size: 2.6rem;
+}
+.fontMidl {
+  font-size: 1.8rem;
+}
+.boxshadow {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 90%);
+}
+/* header style */
+#nacSrIcCont {
+position: relative;
+border-bottom-left-radius: 10px;
+}
+#navSrcIcImg {
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  filter: invert(99%) sepia(77%) saturate(1262%) hue-rotate(249deg) brightness(146%) contrast(91%);
+}
+#serchInput {
+  padding: 0 2vw;
+  outline: none;
+  height: 40px;
+  border: none;
+  border-bottom-left-radius: 10px;
+}
+#searchInputSpan {
+  position: absolute;
+  left: 60px;
+  pointer-events: none;
+  color: #9DA99A;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+#nacSrIcCont input:valid ~span,
+#nacSrIcCont input:focus ~span {
+  color: black; 
+  font-family: sans-serif;
+  font-weight: 900;
+  transform: translateX(10px) translateY(-20px);
+  font-size: 1rem;
+  padding: 0 10px;
+  background: transparent;
+  letter-spacing: 0.1rem;
+}
+#nacSrIcCont input:valid,
+#nacSrIcCont input:focus {
+  border: none
+}  
+#searchButton {
+  height: 40px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 2vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navFilterBox {
+  width: 17vw;
+  margin: 0 1vw;
+  border: 2px solid var(--colorBlack);
+  border-radius: 0 10px 10px 10px;
+  background-color: var(--colorBackground);
+  cursor: pointer;
+  transform: translateX(0px);
+  transition: all 0.2s linear;
+}
+.navFilterBox.active {
+  background-color: var(--colorGreen);
+  color: var(--colorBackground);
+  width: 16vw;
+  transform: translateX(10px) ;
+}
+.navFilterBox.active h3 {
+  font-size: 1.6rem;
+}
+/* main style */
+.mainDivBox {
+  width: 330px;
+  height: 350px;
+  margin: 3vh 4vw;
+  border-radius: 0 10px 10px 10px;
+  overflow: hidden;
+}
+#mainImgBoxContainer {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0 10px 10px 10px;
+  overflow: hidden;
+}
+.mainDivBoxImg {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0 10px 10px 10px;
+}
+.mainDivBoxImg:hover {
+  height: 650px;
+}
+.mainDivBoxP {
+  color: var(--colorBackground);
+  font-weight: bold;
+}
+/* footer style */
+#footerDivContainer {
+  padding-bottom: 3vh;
+}
+.footerLink {
+  color: var(--colorBackground);
+  text-decoration: none;
+}
+#footerFontsCopyright {
+  text-align: center;
+}
+.disabled {
+  opacity: 0;
+}
+.hiddenDisplay {
+  display: none;
+}
+
+
+/* media mobile style */
+@media screen and (max-width:900px) {
+  #footerFontsCopyright, .footerLink {
+    font-size: 0.9rem;
+  }
+  #fullPageSec {
+    padding: 2vh 3vw;
+    width: 100vw;
+  }
+  #fullPageDivContainer {
+    padding: 2vh 3vw;
+    margin: 0 auto;
+    width: 95vw;
+  }
+  #headerH1, #headerH2 {
+    text-align: center;
+  }
+  #navigationForFilter, #navSearchDivContainer, #nacSrIcCont, 
+  #footer, #footerDivContainer, #footerFontsCopyrightDivContainer {
+    width: 90vw;
+  }
+  #serchInput {
+    width: 85%;
+  }
+  .navFilterBox {
+    width: 35vw;
+    margin-top: 20px;
+    margin-right: 3vw;
+  }
+  .navFilterBox.active {
+    width: 23vw;
+  }
+  .navFilterBox.active > .fontMidl {
+    font-size: 0.9rem;
+  }
+  .fontMidl {
+    font-size: 1.4rem;
+  }
+}

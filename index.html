@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Filter Items Project">
+  <meta name="keywords" content="Filter,items,project,">
+  <meta name="generator" content="Visual Studio Code">
+  <meta name="distribution" content="global">
+  <meta name="author" content="NyitiG">
+  <meta name="revised" content="NyitiG Világa, 2022/08/16">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/pic/favicon.ico" type="image/x-icon">
+  <title>Filter Project</title>
+</head>
+<body>
+  <section id="fullPageSec" class="displayFlexColumn alignItemCent justyContCent">
+    <div id="fullPageDivContainer" class="displayFlexColumn alignItemCent justyContCent">
+      <header id="header" class="displayFlexColumn alignItemCent justyContCent">
+        <div id="headerDivContainer" class="displayFlexColumn alignItemCent">
+          <h1 id="headerH1" class="fontH1 marginTopH">Filter Items Project</h1>
+        </div>
+        <div id="headerH2DivCont" class="displayFlexColumn alignItemCent">
+          <h2 id="headerH2" class="fontMidl marginTopP">Zöld ujj - Grüner Daumen Pictures</h2>
+        </div>
+      </header>
+      <nav id="navigationForFilter" class="displayFlexColumn marginTopH">
+        <div id="navSearchDivContainer" class="displayFlexRow justyContCent">
+          <div id="nacSrIcCont" class="displayFlexRow alignItemCent boxshadow">
+            <img id="navSrcIcImg" class="" src="assets/pic/search-outline.svg" alt="">
+            <input type="text" name="inputText" id="serchInput" class="" required="required" autocomplete="off">
+            <span id="searchInputSpan" class="">Keresett fotó</span>
+            <button id="searchButton" class="">Keresés</button>
+          </div>
+        </div>
+        <div id="navDivContainer" class="displayFlexRow flexWrap marginTopH justyContCent">
+          <div id="" class="navFilterBox displayFlexColumn alignItemCent justyContCent boxshadow active" data-filter="összes"> 
+            <h3 id="" class="fontMidl">Összes</h3>
+          </div>
+          <div id="" class="navFilterBox displayFlexColumn alignItemCent justyContCent boxshadow" data-filter="állatok">
+            <h3 id="" class="fontMidl">Állatok</h3>
+          </div>
+          <div id="" class="navFilterBox displayFlexColumn alignItemCent justyContCent boxshadow" data-filter="savanyúság">
+            <h3 id="" class="fontMidl">Savanyúság</h3>
+          </div>
+          <div id="" class="navFilterBox displayFlexColumn alignItemCent justyContCent boxshadow" data-filter="himesháza">
+            <h3 id="" class="fontMidl">Himesháza</h3>
+          </div>
+          <div id="" class="navFilterBox displayFlexColumn alignItemCent justyContCent boxshadow" data-filter="szőlőhegy">
+            <h3 id="" class="fontMidl">Szőlőhegy</h3>
+          </div>
+        </div>
+      </nav>
+      <main id="main" class="marginTopH displayFlexColumn justyContCent alignItemCent">
+        <div id="mainDivContainer" class="displayFlexRow justyContCent flexWrap marginTopH">
+          <!-- Load mainDivContainerTemplate -->
+        </div>
+      </main>
+      <footer id="footer" class="marginTopH displayFlexColumn alignItemCent justyContCent">
+        <div id="footerDivContainer" class="marginTopH displayFlexColumn alignItemCent justyContCent">
+          <div id="footerCreatCont" class="">
+            <a class="footerLink" href="https://www.facebook.com/profile.php?id=100008429973897" target="_blank" rel="noopener noreferrer">Created by NyitiG</a>
+          </div>
+          <div id="footerFontsCopyrightDivContainer" class=" marginTopP">
+            <h6 id="footerFontsCopyright" class="">
+              This page use Dancing Script font.
+              Copyright 2016 The Dancing Script Project Authors 
+              <a class="footerLink" href="https://github.com/googlefonts/DancingScript" target="_blank" rel="noopener noreferrer">(https://github.com/googlefonts/DancingScript)</a>
+              , with Reserved Font Name 'Dancing Script'.
+            </h6>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
